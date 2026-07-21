@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumni Maroc CI — La communauté des anciens du Maroc à Abidjan</title>
+<meta name="description" content="Une communauté vivante d'anciens étudiants formés au Maroc, aujourd'hui actifs à Abidjan. Rejoignez l'annuaire, les rencontres et les opportunités.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#inscription">Aller au formulaire d'inscription</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#" class="brand">
+      <span class="brand__mark">AM</span>
+      <span class="brand__name">Alumni Maroc <span class="accent">CI</span></span>
+    </a>
+    <a href="#inscription" class="btn btn--accent btn--sm">Rejoindre</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Abidjan · Côte d'Ivoire</p>
+      <h1 class="hero__title">
+        Formés au Maroc.<br>
+        Actifs à <span class="accent">Abidjan</span>.
+      </h1>
+      <p class="hero__subtitle">
+        Une communauté d'anciens étudiants du Maroc, de nationalités et de secteurs
+        différents, qui se retrouve régulièrement et se soutient au quotidien.
+      </p>
+      <div class="hero__actions">
+        <a href="#inscription" class="btn btn--accent btn--lg">Rejoindre la communauté</a>
+        <a href="#communaute" class="btn btn--ghost btn--lg">Découvrir la communauté</a>
+      </div>
+    </div>
+    <div class="hero__glow" aria-hidden="true"></div>
+  </section>
+
+  <!-- CARROUSEL -->
+  <section class="carousel-section" id="communaute" aria-label="Photos de la communauté">
+    <div class="carousel-section__head">
+      <h2>Des rencontres, pas des discours</h2>
+      <p>Un aperçu de nos derniers moments ensemble.</p>
+    </div>
+
+    <div class="carousel" id="carousel">
+      <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Photo précédente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="carousel__viewport" id="carouselViewport">
+        <ul class="carousel__track" id="carouselTrack">
+
+          <li class="carousel__slide">
+            <img src="images/carousel-1.svg" alt="Afterwork mensuel entre membres de la communauté" draggable="false">
+            <div class="carousel__caption">
+              <span class="carousel__caption-title">Afterwork mensuel</span>
+              <span class="carousel__caption-meta">Cocody, Abidjan — Mars 2026</span>
+            </div>
+          </li>
+
+          <li class="carousel__slide">
+            <img src="images/carousel-2.svg" alt="Match de foot amical entre alumni" draggable="false">
+            <div class="carousel__caption">
+              <span class="carousel__caption-title">Match de foot entre alumni</span>
+              <span class="carousel__caption-meta">Riviera, Abidjan — Février 2026</span>
+            </div>
+          </li>
+
+          <li class="carousel__slide">
+            <img src="images/carousel-3.svg" alt="Soirée de networking professionnel" draggable="false">
+            <div class="carousel__caption">
+              <span class="carousel__caption-title">Soirée networking</span>
+              <span class="carousel__caption-meta">Plateau, Abidjan — Janvier 2026</span>
+            </div>
+          </li>
+
+          <li class="carousel__slide">
+            <img src="images/carousel-4.svg" alt="Déjeuner communautaire entre membres" draggable="false">
+            <div class="carousel__caption">
+              <span class="carousel__caption-title">Déjeuner du dimanche</span>
+              <span class="carousel__caption-meta">Marcory, Abidjan — Décembre 2025</span>
+            </div>
+          </li>
+
+          <li class="carousel__slide">
+            <img src="images/carousel-5.svg" alt="Rencontre informelle entre anciens étudiants" draggable="false">
+            <div class="carousel__caption">
+              <span class="carousel__caption-title">Retrouvailles de promo</span>
+              <span class="carousel__caption-meta">Zone 4, Abidjan — Novembre 2025</span>
+            </div>
+          </li>
+
+          <li class="carousel__slide">
+            <img src="images/carousel-6.svg" alt="Session de discussion et de partage entre membres" draggable="false">
+            <div class="carousel__caption">
+              <span class="carousel__caption-title">Café du samedi</span>
+              <span class="carousel__caption-meta">Bonapriso — Octobre 2025</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Photo suivante">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Sélection de la photo"></div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission" id="mission">
+    <div class="mission__head">
+      <h2>Ce qu'on construit ensemble</h2>
+      <p>Trois piliers, un seul objectif : ne jamais rester isolé.</p>
+    </div>
+    <div class="mission__grid">
+
+      <article class="mission__card">
+        <div class="mission__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Se reconnecter</h3>
+        <p>Un annuaire vivant pour retrouver qui est passé par le Maroc et savoir qui est aujourd'hui à Abidjan, dans quel secteur.</p>
+      </article>
+
+      <article class="mission__card">
+        <div class="mission__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 19V9M12 19V5M20 19v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Se voir régulièrement</h3>
+        <p>Afterworks, matchs, déjeuners : des rendez-vous simples et réguliers pour que la communauté reste réelle, pas virtuelle.</p>
+      </article>
+
+      <article class="mission__card">
+        <div class="mission__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M7 12h10M7 12l4-4M7 12l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="12" r="2.2" stroke="currentColor" stroke-width="1.6"/><circle cx="20" cy="12" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3>Créer des ponts</h3>
+        <p>Mettre en relation les bonnes personnes pour faire émerger des opportunités professionnelles et des partenariats concrets.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FORMULAIRE -->
+  <section class="registration" id="inscription">
+    <div class="registration__inner">
+      <div class="registration__intro">
+        <h2>Rejoindre l'annuaire</h2>
+        <p>Deux minutes pour intégrer la communauté. Vos informations ne servent qu'à construire l'annuaire des membres.</p>
+      </div>
+
+      <form class="form" id="registrationForm" novalidate>
+
+        <div class="form__row">
+          <label for="fullName">Nom complet <span aria-hidden="true">*</span></label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+        </div>
+
+        <div class="form__row">
+          <label for="school">École / université au Maroc <span aria-hidden="true">*</span></label>
+          <input type="text" id="school" name="school" required>
+        </div>
+
+        <div class="form__row form__row--split">
+          <div class="form__field">
+            <label for="graduationYear">Année de sortie <span aria-hidden="true">*</span></label>
+            <input type="number" id="graduationYear" name="graduationYear" min="1980" max="2030" inputmode="numeric" required>
+          </div>
+          <div class="form__field">
+            <label for="nationality">Nationalité <span aria-hidden="true">*</span></label>
+            <input type="text" id="nationality" name="nationality" required>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <label for="sector">Secteur d'activité <span aria-hidden="true">*</span></label>
+          <select id="sector" name="sector" required>
+            <option value="" disabled selected>Sélectionnez un secteur</option>
+            <option value="Banque / Finance">Banque / Finance</option>
+            <option value="Administration publique">Administration publique</option>
+            <option value="Industrie">Industrie</option>
+            <option value="Tech">Tech</option>
+            <option value="Agro-industrie">Agro-industrie</option>
+            <option value="Défense / Sécurité">Défense / Sécurité</option>
+            <option value="Conseil">Conseil</option>
+            <option value="Santé">Santé</option>
+            <option value="Éducation">Éducation</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label for="contact">Email ou téléphone <span aria-hidden="true">*</span></label>
+          <input type="text" id="contact" name="contact" autocomplete="email" required>
+        </div>
+
+        <button type="submit" class="btn btn--accent btn--lg form__submit" id="formSubmit">
+          <span class="form__submit-label">Envoyer mon inscription</span>
+        </button>
+
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="brand__name">Alumni Maroc <span class="accent">CI</span></span>
+    <span class="footer__city">Abidjan, Côte d'Ivoire</span>
+  </div>
+</footer>
+
+<script type="module" src="js/supabase-config.js"></script>
+<script type="module" src="js/form.js"></script>
+<script src="js/carousel.js" defer></script>
+</body>
+</html>
