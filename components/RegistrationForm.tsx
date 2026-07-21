@@ -49,7 +49,8 @@ export default function RegistrationForm() {
       graduation_year: Number(data.get("graduationYear")),
       nationality: data.get("nationality")?.toString().trim(),
       sector: data.get("sector")?.toString().trim(),
-      contact: data.get("contact")?.toString().trim(),
+      email: data.get("email")?.toString().trim(),
+      whatsapp: data.get("whatsapp")?.toString().trim() || null,
     };
 
     setLoading(true);
@@ -166,18 +167,31 @@ export default function RegistrationForm() {
             </select>
           </div>
 
-          <div className="form__row">
-            <label htmlFor="contact">
-              Email ou téléphone <span aria-hidden="true">*</span>
-            </label>
-            <input
-              type="text"
-              id="contact"
-              name="contact"
-              autoComplete="email"
-              required
-              className={fieldClass}
-            />
+          <div className="form__row form__row--split">
+            <div className="form__field">
+              <label htmlFor="email">
+                Email <span aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autoComplete="email"
+                required
+                className={fieldClass}
+              />
+            </div>
+            <div className="form__field">
+              <label htmlFor="whatsapp">WhatsApp</label>
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                autoComplete="tel"
+                placeholder="+225 07 00 00 00 00"
+                className={fieldClass}
+              />
+            </div>
           </div>
 
           <button

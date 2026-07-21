@@ -43,7 +43,8 @@ npm install
      graduation_year int not null,
      nationality text not null,
      sector text not null,
-     contact text not null
+     email text not null,
+     whatsapp text
    );
 
    alter table public.inscriptions enable row level security;
@@ -55,6 +56,14 @@ npm install
      for insert
      to anon
      with check (true);
+   ```
+
+   Si la table `inscriptions` existe déjà avec une colonne `contact`
+   (ancienne version du formulaire), migrez-la plutôt avec :
+
+   ```sql
+   alter table public.inscriptions rename column contact to email;
+   alter table public.inscriptions add column whatsapp text;
    ```
 
 3. Dans **Project Settings > API**, récupérez `Project URL` et la clé
