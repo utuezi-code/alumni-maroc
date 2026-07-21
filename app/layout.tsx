@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alumni Maroc CI — La communauté des anciens du Maroc à Abidjan",
+  title: "COMAL — La communauté des anciens du Maroc à Abidjan",
   description:
     "Une communauté vivante d'anciens étudiants formés au Maroc, aujourd'hui actifs à Abidjan. Rejoignez l'annuaire, les rencontres et les opportunités.",
 };

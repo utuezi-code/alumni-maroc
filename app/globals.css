@@ -119,21 +119,9 @@ button { font: inherit; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 700;
-  font-size: 1.02rem;
-  letter-spacing: -0.01em;
-}
-.brand__mark {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background: var(--accent-dim);
-  color: var(--accent);
-  font-size: 0.8rem;
   font-weight: 800;
-  border: 1px solid rgba(255, 92, 26, 0.3);
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
 }
 
 /* ============ Hero ============ */

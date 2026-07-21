@@ -1,4 +1,4 @@
-# Alumni Maroc CI
+# COMAL
 
 Site vitrine + annuaire pour la communauté des anciens étudiants formés au
 Maroc, aujourd'hui actifs à Abidjan.
